@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Canvas Game Stuff</title>
+</head>
+<body>
+  <!-- set up an infinite scroll -->
+  <div class="container">
+    <div class="sliding-background"></div>
+  </div>
+
+  <canvas width="600" height="600"></canvas>
+  <button class="pause">Pause Game</button><button class="play">Resume Game</button>
+
+  <img class="hide-me ship" src="images/Galaga_ship.png" alt="player">
+
+  <!-- add enemy ships here -->
+  <img class="hide-me enemyOne" src="images/enemy1.png" alt="bad guy!">
+  <img class="hide-me enemyTwo" src="images/enemy2.png" alt="bad guy!">
+  <img class="hide-me enemyThree" src="images/enemy3.png" alt="bad guy!">
+
+  <!-- add reset screen here -->
+  <div class="level-up">
+    <h4 class="level-up-message"></h4>
+    <p>Ready Player 1?</p>
+    <button class="reset">LEVEL UP</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

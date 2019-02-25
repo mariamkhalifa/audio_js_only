@@ -1,0 +1,81 @@
+body {
+	text-align: center;
+	user-select: none;
+	font-size: 16px;
+	color: white;
+	background-color: black;
+}
+
+canvas {
+	position: relative;
+	border : thin solid black;
+	display: block;
+	margin: 0 auto 20px;
+  cursor: false;
+}
+/* cursor: none; */
+button {  margin: 0 8px; user-select: none; cursor: pointer; }
+
+.hide-me { display : none; }
+
+.behind-canvas {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: 400px;
+  background-color: blue;
+}
+
+/*#gameBoard { position: relative; width: 600px; margin: 0 auto; }
+*/
+#newShip { position: absolute; bottom: 0; left: 0 }
+
+.level-up {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 9px;
+	width: 600px;
+	height: 600px;
+	background-color: black;
+	color: white;
+	margin: 0 auto;
+	z-index: 2;
+	display: none; opacity: 0;
+}
+
+.level-up-message { font-size: 2em; margin-top: 100px; }
+.level-up p { font-size: 1.5em; }
+
+.show-level-up { display : block; opacity : 1; }
+
+/* background animation */
+
+.container {
+  height: 600px;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.sliding-background {
+  background: url("../images/maxresdefault.jpg") repeat-y;
+  height: 5076px;
+  width: 600px;
+  animation: slide 60s linear infinite;
+  /*text-align: center;*/
+  margin: 0 auto;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(0, -1692px, 0);
+  }
+}
